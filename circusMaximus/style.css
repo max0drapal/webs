@@ -1,0 +1,139 @@
+body {
+    background-color: #3d2f2d; 
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid #553a3a; 
+}
+
+.top-nav a, .top-nav .nav-title {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-title {
+    margin-right: auto; 
+}
+
+
+section {
+    background-color: #553a3a; 
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.shop-items img {
+    width: 45%;
+    margin: 10px;
+}
+
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.back-button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.homepage-content a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+.tracklist-content p {
+    text-align: left;
+    margin: 5px 0;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.back-button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px; 
+    border: 2px solid #ffffff;
+    border-radius: 5px; 
+    background-color: #553a3a;
+}
+.spotify-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1DB954;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px; 
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.spotify-button:hover {
+    background-color: #1ed760; 
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.shop-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
