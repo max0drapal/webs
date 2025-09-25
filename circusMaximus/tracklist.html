@@ -16,26 +16,40 @@
 
         <main>
             <section class="tracklist-content">
-                <h1>Tracklist</h1>
-                <p>Hyæna</p>
-                <p>Thank God</p>
-                <p>Modern Jam (feat. Teezo Touchdown)</p>
-                <p>My Eyes (feat. Bon Iver & Sampha)</p>
-                <p>God’s Country</p>
-                <p>Skitzo (feat. Young Thug)</p>
-                <p>Lost Forever (feat. James Blake & Westside Gunn)</p>
-                <p>Looove (feat. Kid Cudi)</p>
-                <p>K-POP (feat. Bad Bunny & The Weeknd)</p>
-                <p>Telekinesis (feat. SZA & Future)</p>
-                <p>Til Further Notice (feat. 21 Savage & James Blake)</p>
+                <h1>Utopia – Album</h1>
+
+                <div class="spotify-buttons">
+                    <button id="spotify-btn">🎵 PLAY</button>
+                    <button id="stop-btn">⏹ EXIT</button>
+                </div>
+
+                <div id="spotify-player">
+                    <iframe id="spotify-iframe" src="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
             </section>
         </main>
-        <a href="https://open.spotify.com/album/18NOKLkZETa4sWwLMIm0UZ?si=4TwIVxeYRzSmeyNxeOzy4w" target="_blank" class="spotify-button">
-            Přehrát na Spotify
-        </a>
+
         <div class="back-button">
-            <a href="index.html">back</a>
+            <a href="index.html">← Zpět</a>
         </div>
     </div>
+
+    <script>
+        const playBtn = document.getElementById('spotify-btn');
+        const stopBtn = document.getElementById('stop-btn');
+        const iframe = document.getElementById('spotify-iframe');
+        const player = document.getElementById('spotify-player');
+
+        playBtn.addEventListener('click', () => {
+            iframe.src = "https://open.spotify.com/embed/album/18NOKLkZETa4sWwLMIm0UZ?utm_source=generator&autoplay=1";
+            player.style.display = 'block';
+            iframe.scrollIntoView({ behavior: "smooth" });
+        });
+
+        stopBtn.addEventListener('click', () => {
+            iframe.src = "";
+            player.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
